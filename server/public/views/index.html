@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <!-- MARK: -- Import Angular -->
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <!-- MARK: Import client.js -->
+    <script src="../scripts/client.js"></script>
+
+    <!-- MARK: -- Import Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script type="text/javascript" src="/scripts/firebaseConfig.js"></script>
+    <script type="text/javascript" src="/vendors/angularfire.min.js"></script>
+
+
+    <!-- MARK: -- Import ng-route -->
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+
+
+    <!-- MARK: -- Import _.js -->
+    <script type="text/javascript" src="/vendors/underscore/underscore-min.js"></script>
+
+
+    <!-- MARK: -- Import Factories -->
+    <script type="text/javascript" src="/scripts/factories/userFactory.js"></script>
+
+
+    <!-- MARK: -- Import Controllers -->
+    <script type="text/javascript" src="/scripts/controllers/landingPageController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/homeController.js"></script>
+
+
+
+
+    <title>Firebase Template</title>
+</head>
+
+
+<body ng-app="myApp">
+    <main ng-view>
+      <!--MARK: connection to ng-routes: view client.js to see /routes to partials and controllers -->
+    </main>
+</body>
+
+</html>
