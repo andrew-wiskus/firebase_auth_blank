@@ -2,8 +2,26 @@
 
 <!-- make signout button -->
 
+<!--add task input + submit button -->
+
+<!--ng repeat on tasklist -->
+<!--priority buttons-->
 
 
 
-<!-- <h1>Welcome User: {{user.email}}</h1>
-<button ng-click="signOut()">Sign Out</button> -->
+
+
+
+
+<!-- <h1>Hello user: {{user.email}}</h1>
+<button ng-click="signOut()">Sign Out</button>
+
+<p>Add New Task</p>
+<input type="text" ng-model="newTask" ng-value="newTask" />
+<button ng-click="addTask(newTask)">ADD TASK</button>
+
+
+<div ng-repeat="task in taskList" style="{{task.data.priority > 3 ? 'font-size: 33px' : '' }}">
+<button ng-click="priorityDown(task)">-</button>{{task.data.priority}}<button ng-click="priorityUp(task)">+</button>
+{{task.data.title}}
+</div> -->

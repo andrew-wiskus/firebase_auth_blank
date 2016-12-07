@@ -4,7 +4,7 @@ myApp.controller("LandingPageController", ["$scope", "$location", "$firebaseAuth
     function($scope, $location, $firebaseAuth, UserFactory) {
 
         //make sure controller is loading
-        console.log('No User Logged In: LandingPageController Loaded')
+        console.log('LandingPageController Loaded')
 
         //build signIn()
 
@@ -17,21 +17,20 @@ myApp.controller("LandingPageController", ["$scope", "$location", "$firebaseAuth
 
 
 
+
     }
 ]);
 
 
 
-
-
-
-
-
-
 // $scope.signIn = UserFactory.signIn();
+
 // var auth = $firebaseAuth();
-// auth.$onAuthStateChanged(function(user) {
-//     if (user != null) {
-//         $location.path('/home');
-//     }
+// auth.$onAuthStateChanged(function(user){
+//   console.log('user logged in ', user.email);
+//
+//   if(user != null){
+//     $location.path('/home');
+//   }
+//
 // })

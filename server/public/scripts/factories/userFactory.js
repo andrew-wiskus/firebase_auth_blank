@@ -2,13 +2,16 @@
 
 myApp.factory('UserFactory', [function() {
 
-    //establish provider .GoogleAuthProvider()
+    var provider = new firebase.auth.GoogleAuthProvider()
 
     //signIn()
 
     //signOut()
 
     //export functions
+    return {
+
+    };
 
 
 }]);
@@ -18,8 +21,23 @@ myApp.factory('UserFactory', [function() {
 
 
 
-
-
+//
+// //establish provider .GoogleAuthProvider()
+// var provider = new firebase.auth.GoogleAuthProvider();
+//
+// //signIn()
+// function signIn(){
+//   firebase.auth().signInWithPopup(provider)
+// }
+// //signOut()
+// function signOut(){
+//   firebase.auth().signOut();
+// }
+// //export functions
+// return {
+//   signIn: function(){return signIn},
+//   signOut: function(){return signOut}
+// };
 
 
 
@@ -63,7 +81,7 @@ myApp.factory('UserFactory', [function() {
 
 // function signIn() {
 //     firebase.auth()
-//         .signInWithPopup(provider)
+// //         .signInWithPopup(provider)
 //         .then(function(result) {
 //             var token = result.credential.accessToken;
 //             var user = result.user;

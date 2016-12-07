@@ -1,27 +1,23 @@
 //MARK:-- User Home Page Controller
 
-myApp.controller("HomeController", ["$scope", "$location", "$firebaseAuth", 'UserFactory',
-    function($scope, $location, $firebaseAuth, UserFactory) {
+myApp.controller("HomeController", ["$scope", "$location", "$timeout", "$firebaseAuth", 'UserFactory',
+    function($scope, $location, $timeout, $firebaseAuth, UserFactory) {
 
-        //make sure controller is loaded
-        console.log('User Is Logged In: Home Controller Loaded');
+        //signout() 
 
-        //create user scope
-
-        //build signOut()
-
-        //auth functionality
-        //change path if user == null
+        //auth()
+        //-check if user -> relocate if null
+        //-connect tasklist
+        //-check if user is new
 
 
-
-
+        //priorityUp/Down ()
+        //delete task ()
+        //add task ()
+        //make snapshot object
 
     }
 ]);
-
-
-
 
 
 

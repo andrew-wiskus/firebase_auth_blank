@@ -1,8 +1,10 @@
+//MARK:-- App init + Angular Routes
+
 var myApp = angular.module("myApp", ["ngRoute", "firebase"]);
 myApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
-        .when('/welcome', {
+        .when('/landingpage', {
             //no user logged in
             templateUrl: '/views/partials/landingPage.html',
             controller: 'LandingPageController'
@@ -13,7 +15,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'HomeController'
         })
         .otherwise({
-            redirectTo: 'welcome'
+            redirectTo: 'landingpage'
         });
 
 }]);
