@@ -1,6 +1,6 @@
 
-###Note: This template uses NodeJS to host the development server.
-####firebase only exists in the public folder :)
+###Note: This template uses Node to host the development server.
+####Note: firebase only exists in the public folder, you dont need Node. The only dependancies brought in package.json are to run the local host.
 1. Log into https://firebase.google.com/
 2. Go to https://console.firebase.google.com/
 3. Create new project
@@ -11,6 +11,3 @@
 
 
 
-## For a chestnut and fellow marshmallows
-####you just got roasted
-ilyall.
